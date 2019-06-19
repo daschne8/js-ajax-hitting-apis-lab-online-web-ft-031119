@@ -32,6 +32,7 @@ function displayRepositories() {
 function getCommits(el){
   const name = el.dataset.repo;
   const url = rootURL + '/repos/' + el.dataset.username + '/'+ name + '/commits'
+  
   const req = new XMLHttpRequest();
   req.addEventListener('load', showCommits);
   req.open('GET', url);
@@ -52,4 +53,8 @@ function displayCommits(){
         )
       .join('')}</ul>`;
     document.getElementById('commits').innerHTML = commitsList;
+  }
+  function myPry(message){
+    const pryDiv = document.querySelector('#my-pry')
+    pryDiv.innerHTML = '<p>${message}</p>'
   }
