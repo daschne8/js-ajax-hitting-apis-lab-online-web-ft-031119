@@ -74,7 +74,7 @@ function displayBranches(){
         '<li><h3>' +
         ' (' +
         ')</h3>' +
-        
+
         '</li>'
     )
     .join('')}</ul>`;
