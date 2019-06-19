@@ -74,7 +74,6 @@ function displayBranches(){
         '<li><h3>' +
         branch.branch.author.name +
         ' (' +
-        branch.author.login +
         ')</h3>' +
         branch.branch.message +
         '</li>'
