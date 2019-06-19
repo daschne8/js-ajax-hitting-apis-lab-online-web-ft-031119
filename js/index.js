@@ -42,9 +42,9 @@ function displayCommits() {
   const commitsList = `<ul>${commits
     .map(
       commit =>
-        '<li><strong>' +
+        '<li>' +
         commit.commit.author.name +
-        '</strong> - ' +
+
         commit.commit.message +
         '</li>'
     )
