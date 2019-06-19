@@ -39,7 +39,6 @@ function getCommits(el){
 }
 function displayCommits(){
   const commits = JSON.parse(this.responseText);
-  myPry(commits)
     const commitsList = `<ul>${commits
       .map(
         commit =>
@@ -52,7 +51,7 @@ function displayCommits(){
         '</li>'
         )
       .join('')}</ul>`;
-    document.getElementById('commits').innerHTML = commitsList;
+    document.getElementById('details').innerHTML = commitsList;
   }
   function myPry(message){
     const pryDiv = document.querySelector('.my-pry')
