@@ -53,3 +53,7 @@ function displayCommits() {
     .join('')}</ul>`;
   document.getElementById('details').innerHTML = commitsList;
 }
+function getBranches(el){
+  const repoName = el.dataset.repository
+
+}
