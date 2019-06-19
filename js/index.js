@@ -42,13 +42,7 @@ function displayCommits(){
     const commitsList = `<ul>${commits
       .map(
         commit =>
-        '<li><h3>' +
-        commit.commit.author.name +
-        ' (' +
-        ')</h3>' +
-        commit.commit.message +
-        '</li>'
-        )
+        '<li>commit.commit.author.name<li/>' +
       .join('')}</ul>`;
     document.getElementById('details').innerHTML = commitsList;
   }
