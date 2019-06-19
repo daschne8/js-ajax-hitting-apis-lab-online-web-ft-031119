@@ -37,16 +37,3 @@ function getCommits(el){
   req.open('GET', url);
   req.send();
 }
-function displayCommits(){
-  const commits = JSON.parse(this.responseText);
-    const commitsList = `<ul>${commits
-      .map(
-        commit =>
-        '<li>commit.commit.author.name<li/>' +
-      .join('')}</ul>`;
-    document.getElementById('details').innerHTML = commitsList;
-  }
-  function myPry(message){
-    const pryDiv = document.querySelector('.my-pry')
-    pryDiv.innerHTML = `<p>${message}</p>`
-  }
