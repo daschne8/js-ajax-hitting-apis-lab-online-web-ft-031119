@@ -1,5 +1,9 @@
 const rootURL = 'https://api.github.com';
 
+function myPry(message){
+  document.querySelector('.my-pry').innerHTML = `<p>${message}</p>`
+}
+
 function getRepositories() {
   const name = document.getElementById('username').value;
   const uri = rootURL + '/users/' + name + '/repos';
@@ -63,8 +67,19 @@ function getBranches(el){
   req.send()
 }
 function displayBranches(){
-  mypry()
+  const commits = JSON.parse(this.responseText);
+  const commitsList = `<ul>${commits
+    .map(
+      commit =>
+        '<li><h3>' +
+        commit.commit.author.name +
+        ' (' +
+        commit.author.login +
+        ')</h3>' +
+        commit.commit.message +
+        '</li>'
+    )
+    .join('')}</ul>`;
+  document.getElementById('details').innerHTML = commitsList;
 }
-function myPry(message){
-  document.querySelector('.my-pry').innerHTML = `<p>${message}</p>`
-}
+
