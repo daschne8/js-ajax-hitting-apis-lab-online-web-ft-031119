@@ -55,6 +55,6 @@ function displayCommits(){
     document.getElementById('commits').innerHTML = commitsList;
   }
   function myPry(message){
-    const pryDiv = document.querySelector('#my-pry')
+    const pryDiv = document.querySelector('.my-pry')
     pryDiv.innerHTML = '<p>${message}</p>'
   }
