@@ -66,5 +66,5 @@ function displayBranches(){
   mypry()
 }
 function myPry(message){
-  document.querySelecter('.my-pry').innerHTML = `<p>${message}</p>`
+  document.querySelector('.my-pry').innerHTML = `<p>${message}</p>`
 }
