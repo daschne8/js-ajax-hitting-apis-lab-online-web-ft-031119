@@ -60,7 +60,7 @@ function getBranches(el){
   req.addEventListener('load',displayBranches)
   req.open('GET',url)
   req.send()
-  mypry(req)
+  mypry(JSON.stringify(req))
 }
 function displayBranches(){
   mypry()
