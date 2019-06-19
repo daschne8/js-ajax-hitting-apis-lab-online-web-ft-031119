@@ -31,7 +31,7 @@ function displayRepositories() {
 }
 function getCommits(el){
   const name = el.dataset.repo;
-  myPry(el.dataset)
+  myPry(JSON.stringify(el.dataset))
   const url = rootURL + '/repos/' + el.dataset.username + '/'+ name + '/commits'
   // myPry(url)
   const req = new XMLHttpRequest();
