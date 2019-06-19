@@ -56,5 +56,5 @@ function displayCommits(){
   }
   function myPry(message){
     const pryDiv = document.querySelector('.my-pry')
-    pryDiv.innerHTML = '<p>`+`${message}`+`</p>'
+    pryDiv.innerHTML = '<p>`+message+`</p>'
   }
