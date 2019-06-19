@@ -72,7 +72,7 @@ function displayBranches(){
     .map(
       branch =>
         '<li><h3>' +
-        ' (' + branch.name
+        ' (' + branch.name +
         ')</h3>' +
 
         '</li>'
