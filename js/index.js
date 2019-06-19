@@ -56,5 +56,5 @@ function displayCommits() {
 function getBranches(el){
   const repoName = el.dataset.repository
   const url = rootURL + '/repos/' + el.dataset.username + '/'+ repoName + '/branches'
-  
+
 }
