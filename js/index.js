@@ -65,3 +65,6 @@ function getBranches(el){
 function displayBranches(){
   mypry()
 }
+function myPry(message){
+  document.querySelecter(.my-pry).innerHTML = `<p>${message}</p>`
+}
