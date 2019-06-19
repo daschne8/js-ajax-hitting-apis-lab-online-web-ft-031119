@@ -30,8 +30,8 @@ function displayRepositories() {
   document.getElementById('repositories').innerHTML = repoList;
 }
 function getCommits(el){
-  const name = el.dataset.repository;
-  myPry(name)
+  const repoName = el.dataset.repository;
+  myPry(repoName)
   const url = rootURL + '/repos/' + el.dataset.username + '/'+ name + '/commits'
   // myPry(url)
   const req = new XMLHttpRequest();
