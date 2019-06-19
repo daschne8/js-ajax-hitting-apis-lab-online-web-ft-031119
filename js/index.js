@@ -67,8 +67,8 @@ function getBranches(el){
   req.send()
 }
 function displayBranches(){
-  const commits = JSON.parse(this.responseText);
-  const commitsList = `<ul>${commits
+  const branches = JSON.parse(this.responseText);
+  const branchesList = `<ul>${commits
     .map(
       commit =>
         '<li><h3>' +
